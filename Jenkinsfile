@@ -4,7 +4,7 @@
 node{
   def mavenHome = tool name: 'maven3.8.1'
   stage('CodeClone') {
-    git https://github.com/atehrene/maven-web-apps
+    git "https://github.com/atehrene/maven-web-apps"
   }
   stage('mavenBuild') {
     sh "${mavenHome}/bin/mvn clean package"
@@ -35,4 +35,4 @@ Landmark Technologies''', recipientProviders: [developers()], subject: 'status o
   }
  */ 
 }
-}
+
