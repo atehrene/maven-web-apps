@@ -26,7 +26,7 @@ Landmark Technologies''', recipientProviders: [developers()], subject: 'status o
   }
 
   stage('DeployTomcat') {
-  deploy adapters: [tomcat9(credentialsId: 'githubcredentials', path: '', url: 'http://18.216.237.184:8080')], contextPath: null, war: '**/*.war'
+  deploy adapters: [tomcat9(credentialsId: '0363b789-e10c-4bae-9217-cfc1d774703a', path: '', url: 'http://18.216.237.184:8080')], contextPath: null, war: '**/*.war'
   }
   stage('emailDeployIssues') {
     emailext body: '''Thanks
